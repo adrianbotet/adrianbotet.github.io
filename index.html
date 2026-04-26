@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -7,65 +7,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adrián Botet - Currículum</title>
 
-  <!--
-    - favicon
-  -->
   <link rel="shortcut icon" href="./assets/images/avatar-5.png" type="image/x-icon">
 
-  <!--
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      /* Cambiamos los fondos oscuros a blancos y grises muy claros */
+      --smoky-black: #F4F5F7;
+      --eerie-black-1: #FFFFFF;
+      --eerie-black-2: #F0F2F5;
+      --jet: #E4E6E9;
+      --bg-gradient-onyx: linear-gradient(to bottom right, #FFFFFF 0%, #F4F5F7 100%);
+      --bg-gradient-jet: linear-gradient(to bottom right, #F0F2F5 0%, #E4E6E9 100%);
+      
+      /* Cambiamos los textos blancos a gris oscuro/negro para que se lean */
+      --white-1: #1A1D20;
+      --white-2: #333333;
+      --light-gray: #4A4A4A;
+      --light-gray-70: rgba(26, 29, 32, 0.7);
+      
+      /* Cambiamos el amarillo original por un Azul Marino Corporativo (tipo banco) */
+      --orange-yellow-crayola: #003366; 
+      --vegas-gold: #004080;
+      
+      /* Bordes sutiles para el tema claro */
+      --border-gradient-onyx: solid 1px #E4E6E9;
+    }
+    
+    /* Sombra suave para las tarjetas en fondo blanco */
+    .sidebar, .main-content {
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      border: 1px solid #EAEAEA;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
-
   <main>
-
-    <!--
-      - #SIDEBAR
-    -->
 
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/avatar-5.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/avatar-5.png" alt="Adrián Botet" width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Adrián Botet</h1>
-
+          <h1 class="name" title="Adrián Botet">Adrián Botet</h1>
           <p class="title">Empleado bancario</p>
         </div>
 
-<div class="title-logos" style="display: flex; gap: 5px; margin-top: 5px; margin-bottom: -5px; justify-content: center; align-items: center;">
-    
-    <img src="./assets/images/ibercaja.png" alt="Logo Ibercaja" style="max-height: 35px; width: auto; max-width: 42%; object-fit: contain;">
-    
-    <img src="./assets/images/pensumo.png" alt="Logo Pensumo" style="max-height: 65px; width: auto; max-width: 54%; object-fit: contain;">
-    
-  </div>
+        <div class="title-logos" style="display: flex; margin-top: 15px; margin-bottom: 5px; justify-content: center; align-items: center;">
+          <img src="./assets/images/ibercaja.png" alt="Logo Ibercaja" style="max-height: 35px; width: auto; max-width: 60%; object-fit: contain;">
+        </div>
+        
       </div>
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
+      
+      <button class="info_more-btn" data-sidebar-btn>
+        <span>Show Contacts</span>
+        <ion-icon name="chevron-down"></ion-icon>
+      </button>
 
       <div class="sidebar-info_more">
 
@@ -74,59 +82,43 @@
         <ul class="contacts-list">
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="mail-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Email</p>
-
               <a href="mailto:adrianbs001@gmail.com" class="contact-link">adrianbs001@gmail.com</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Teléfono</p>
-
               <a href="tel:+34 663240046" class="contact-link">+34 663 240 046</a>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Nacimiento</p>
-
-              <time datetime="1982-06-23">Julio 1, 2001</time>
+              <time datetime="2001-07-01">Julio 1, 2001</time>
             </div>
-
           </li>
 
           <li class="contact-item">
-
             <div class="icon-box">
               <ion-icon name="location-outline"></ion-icon>
             </div>
-
             <div class="contact-info">
               <p class="contact-title">Localización</p>
-
               <address>Manises, Valencia, España</address>
             </div>
-
           </li>
 
         </ul>
@@ -147,64 +139,35 @@
             </a>
           </li>
 
-
         </ul>
 
       </div>
 
     </aside>
 
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
     <div class="main-content">
 
-      <!--
-        - #NAVBAR
-      -->
-
       <nav class="navbar">
-
         <ul class="navbar-list">
-
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>Acerca de mí</button>
+            <button class="navbar-link active" data-nav-link>Acerca de mí</button>
           </li>
-
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Recorrido</button>
           </li>
-
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
-
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Currículum</button>
           </li>
-
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contacto</button>
           </li>
-
         </ul>
-
       </nav>
 
-
-
-
-
-      <!--
-        - #About
-      -->
-
-      <article class="about  active" data-page="acerca de mí">
+      <article class="about active" data-page="acerca de mí">
 
         <header>
           <h2 class="h2 article-title">Quién soy</h2>
@@ -216,16 +179,10 @@
             Soy una persona proactiva, trabajadora y orientada a resultados, con una fuerte vocación comercial. Disfruto profundizando en el conocimiento del
             sector para asesorar de forma personalizada a los clientes y ayudarles a alcanzar sus objetivos.
           </p>
-
           <p>
             Busco oportunidades para aplicar mis conocimientos en un entorno dinámico desde banca comercial, empresas o privada donde pueda aprender y contribuir activamente.
           </p>
         </section>
-
-
-        <!--
-          - service
-        -->
 
         <section class="service">
 
@@ -234,140 +191,84 @@
           <ul class="service-list">
 
             <li class="service-item">
-
               <div class="service-icon-box">
-                <img src="./assets/images/icono11.png
-        
-                " alt="design icon" width="40">
+                <img src="./assets/images/icono11.png" alt="design icon" width="40">
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Habilidades comerciales</h4>
-
                 <p class="service-item-text">
                   Experiencia y mejora continua en técnicas de venta enfocado en el cumplimiento de objetivos.
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
                 <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Seguros</h4>
-
                 <p class="service-item-text">
                   Conocimiento y experiencia en la venta de seguros de Vida y No Vida (Certificación IDD)
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
                 <img src="./assets/images/icono22.png" alt="mobile app icon" width="40">
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Financiación</h4>
-
                 <p class="service-item-text">
                   He tenido la oportunidad de trabajar en oficinas con actividad destacable en financiación hipotecaria así como promociones inmobiliarias, batiendo récords.
-   
                 </p>
               </div>
-
             </li>
 
             <li class="service-item">
-
               <div class="service-icon-box">
                 <img src="./assets/images/icono33.png" alt="camera icon" width="40">
               </div>
-
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Asesoramiento Financiero</h4>
-
                 <p class="service-item-text">
                   Alto conocimiento e interés por los mercados financieros, motivo por el cual inicié en el sector.
                 </p>
               </div>
-
             </li>
 
           </ul>
 
         </section>
 
-
-        <!--
-          - testimonials
-        -->
-
-      
-
-
-        <!--
-          - testimonials modal
-        -->
-
         <div class="modal-container" data-modal-container>
-
           <div class="overlay" data-overlay></div>
-
           <section class="testimonials-modal">
-
             <button class="modal-close-btn" data-modal-close-btn>
               <ion-icon name="close-outline"></ion-icon>
             </button>
-
             <div class="modal-img-wrapper">
               <figure class="modal-avatar-box">
                 <img src="./assets/images/avatar-5.png" alt="Daniel lewis" width="80" data-modal-img>
               </figure>
-
               <img src="./assets/images/icon-quote.svg" alt="quote icon">
             </div>
-
             <div class="modal-content">
-
               <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
               <time datetime="2021-06-14">14 June, 2021</time>
-
               <div data-modal-text>
                 <p>
                   Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
                 </p>
               </div>
-
             </div>
-
           </section>
-
         </div>
 
-
-        </section>
-
       </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
 
       <article class="resume" data-page="recorrido">
 
@@ -376,17 +277,14 @@
         </header>
 
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
               <ion-icon name="book-outline"></ion-icon>
             </div>
-
-           <h3 class="h3">Educación</h3>
+            <h3 class="h3">Educación</h3>
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Universidad Politécnica de Valencia - Ingeniería Informática</h4>
               <span>2020 — 2021</span>
@@ -428,7 +326,6 @@
                 Desarrollo de modelos financieros y automatización de procesos mediante VBA, creando simuladores de préstamos y herramientas de análisis para la toma de decisiones.
               </p>
             </li>
-
           </ol>
         </section>
 
@@ -441,7 +338,6 @@
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Ibercaja - Empleado Bancario</h4>
               <span>Febrero 2025 — Actualidad</span>
@@ -459,12 +355,10 @@
                 Mi labor se centró en la captación de usuarios, promoción del producto y difusión de sus ventajas dentro del ecosistema financiero.
               </p>
             </li>
-
           </ol>
         </section>
 
         <section class="timeline">
-
           <div class="title-wrapper">
             <div class="icon-box">
               <ion-icon name="rocket-outline"></ion-icon>
@@ -473,7 +367,6 @@
           </div>
 
           <ol class="timeline-list">
-
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">
                 <a href="https://asmorsa.com" target="_blank" style="color: inherit; text-decoration: underline;">Asmorsa (asmorsa.com)</a>
@@ -485,81 +378,55 @@
                 actualmente me encuentro en la fase de la captación directa de bares y su integración en la base de datos de la app. Próximamente en Play Store y App Store.
               </p>
             </li>
-
           </ol>
         </section>
 
         <section class="skill">
-
           <h3 class="h3 skills-title">Mis skills</h3>
-
           <ul class="skills-list content-card">
-
             <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">Análisis Financiero</h5>
                 <data value="80">80%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>
-
             </li>
 
             <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">Economía</h5>
                 <data value="85">85%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 85%;"></div>
               </div>
-
             </li>
 
             <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">Análisis de datos</h5>
                 <data value="75">75%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 75%;"></div>
               </div>
-
             </li>
 
             <li class="skills-item">
-
               <div class="title-wrapper">
                 <h5 class="h5">Ambición</h5>
                 <data value="100">100%</data>
               </div>
-
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 100%;"></div>
               </div>
-
             </li>
-
           </ul>
-
         </section>
 
       </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
 
       <article class="portfolio" data-page="portfolio">
 
@@ -570,205 +437,128 @@
         <section class="projects">
 
           <ul class="filter-list">
-
-
             <li class="filter-item">
               <button data-filter-btn>Excel</button>
             </li>
-
             <li class="filter-item">
               <button data-filter-btn>Análisis Financiero</button>
             </li>
-
             <li class="filter-item">
               <button data-filter-btn>R (Análisis de Datos)</button>
             </li>
-
           </ul>
 
           <div class="filter-select-box">
-
             <button class="filter-select" data-select>
-
               <div class="select-value" data-selecct-value>Select category</div>
-
               <div class="select-icon">
                 <ion-icon name="chevron-down"></ion-icon>
               </div>
-
             </button>
 
             <ul class="select-list">
-
-
               <li class="select-item">
                 <button data-select-item>Excel</button>
               </li>
-
               <li class="select-item">
                 <button data-select-item>Análisis Financiero</button>
               </li>
-
               <li class="select-item">
                 <button data-select-item>R (Análisis de Datos)</button>
               </li>
-
             </ul>
-
           </div>
 
           <ul class="project-list">
 
-            
-
-            
-
-           
-
-      
-<li class="project-item active" data-filter-item data-category="excel">
-              <a href="https://drive.google.com/file/d/11pBOLdfcc_rv8mjCK3dNtFSmLteNAXEl/view?usp=drive_link">
-            
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-            
-                  <img src="./assets/images/tarificador.png" alt="tarificador de seguros" loading="lazy">
-                </figure>
-            
-                <h3 class="project-title">Tarificador de seguros</h3>
-            
-                <p class="project-category">Excel + VBA</p>
-            
-              </a>
-            </li>
             <li class="project-item active" data-filter-item data-category="excel">
               <a href="https://drive.google.com/file/d/11pBOLdfcc_rv8mjCK3dNtFSmLteNAXEl/view?usp=drive_link">
-            
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-            
                   <img src="./assets/images/tarificador.png" alt="tarificador de seguros" loading="lazy">
                 </figure>
-            
                 <h3 class="project-title">Tarificador de seguros</h3>
-            
                 <p class="project-category">Excel + VBA</p>
-            
               </a>
             </li>
 
             <li class="project-item active" data-filter-item data-category="excel">
               <a href="https://drive.google.com/drive/folders/1alqDTCTan6IDrnH8EbZjzNtTp4nYxeVU?usp=sharing">
-            
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-            
                   <img src="./assets/images/cartera.png" alt="analisis de una cartera de seguros " loading="lazy">
                 </figure>
-            
                 <h3 class="project-title">Analisis de una Cartera de seguros</h3>
-            
                 <p class="project-category">Excel + VBA</p>
-            
               </a>
             </li>
             
             <li class="project-item active" data-filter-item data-category="excel">
               <a href="https://drive.google.com/drive/folders/1LCA0K86xWOYUF0Y_bFRKCkQec-xiSwxG?usp=sharing">
-            
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-            
                   <img src="./assets/images/prestamo.png" alt="solicitudes prestamo hipotecario" loading="lazy">
                 </figure>
-            
                 <h3 class="project-title">Solicitudes Préstamo Hipotecario</h3>
-            
                 <p class="project-category">Excel + VBA</p>
-            
               </a>
             </li>
 
             <li class="project-item active" data-filter-item data-category="excel">
               <a href="https://drive.google.com/drive/folders/1l4WYQvHzVsCWLf4HQE7_F7ZUPNPZM5AV?usp=drive_link">
-            
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-            
                   <img src="./assets/images/alquiler.png" alt="simulador de alquiler de vehículos" loading="lazy">
                 </figure>
-            
                 <h3 class="project-title">Simulador de Alquiler de Vehículos</h3>
-            
                 <p class="project-category">Excel</p>
-            
               </a>
             </li>
 
             <li class="project-item active" data-filter-item data-category="r (análisis de datos)">
               <a href="https://drive.google.com/drive/folders/1FysJos2K6cjX_vePWZvmMMdjA8idwePt?usp=drive_link">
-            
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-            
                   <img src="./assets/images/hogar.png" alt="Análisis BBDD Hogar con dplyr y ggplot2" loading="lazy">
                 </figure>
-            
                 <h3 class="project-title">Análisis de Datos Hogar</h3>
-            
                 <p class="project-category">R (nativo, dplyr y ggplot2)</p>
-            
               </a>
             </li>
 
             <li class="project-item active" data-filter-item data-category="r (análisis de datos)">
               <a href="https://drive.google.com/drive/folders/1Xno0CtgXIGLkdwTCBGzs9bziskptCAf0?usp=drive_link">
-            
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-            
                   <img src="./assets/images/esperanzavida.png" alt="Esperanza de vida análisis con dplyr y ggplot2" loading="lazy">
                 </figure>
-            
                 <h3 class="project-title">Análisis Esperanza de Vida por países</h3>
-            
                 <p class="project-category">R (nativo, dplyr y ggplot2)</p>
-            
               </a>
             </li>
 
-            
-
-          
             <li class="project-item  active" data-filter-item data-category="análisis financiero">
               <a href="https://drive.google.com/file/d/1yzb2yMZ9o-95bFEQMfIEqXY88db-Y-ST/view?usp=drive_link">
-
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
-
                   <img src="./assets/images/analisis.png" alt="task manager" loading="lazy">
                 </figure>
-
                 <h3 class="project-title">Análisis de Estados Financieros PYME Española</h3>
-
                 <p class="project-category">Excel</p>
-
               </a>
             </li>
 
@@ -777,14 +567,6 @@
         </section>
 
       </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
 
       <article class="blog" data-page="currículum">
 
@@ -798,89 +580,60 @@
 
             <li class="blog-post-item">
               <a href="https://drive.google.com/file/d/1ufWJYYsQGAE--MBiZ05fBB-IMe6cuACX/view?usp=drive_link">
-
                 <figure class="blog-banner-box">
                   <img src="./assets/images/curriculum.png" alt="Mi Currículum" loading="lazy">
                 </figure>
-
                 <div class="blog-content">
-
                   <div class="blog-meta">
                     <p class="blog-category">Currículum</p>
-
                     <span class="dot"></span>
-
-                    <time datetime="2024-07-23">Abril, 2026</time>
+                    <time datetime="2026-04-26">Abril, 2026</time>
                   </div>
-
                   <h3 class="h3 blog-item-title">Mi Currículum</h3>
-
                   <p class="blog-text">
                     Visualiza mi currículum vitae en formato PDF.
                   </p>
-
                 </div>
-
               </a>
             </li>
 
             <li class="blog-post-item">
               <a href="https://drive.google.com/drive/folders/1ecesi8IdsiCXydrJvF6Mq298zyWulD2b?usp=sharing">
-
                 <figure class="blog-banner-box">
                   <img src="./assets/images/febf.png" alt="Design digest #80" loading="lazy">
                 </figure>
-
                 <div class="blog-content">
-
                   <div class="blog-meta">
                     <p class="blog-category">Certificados</p>
-
                     <span class="dot"></span>
-
-                    <time datetime="2024-07-23">Abril, 2026</time>
+                    <time datetime="2026-04-26">Abril, 2026</time>
                   </div>
-
                   <h3 class="h3 blog-item-title">Certificados Oficiales</h3>
-
                   <p class="blog-text">
                    En este enlace podrás visualizar los certificados y diplomas de los cursos que he realizado.
                   </p>
-
                 </div>
-
               </a>
             </li>
 
             <li class="blog-post-item">
               <a href="https://drive.google.com/drive/folders/1OvL2l1kwCj6XS_7tKakviQuy8qAN73Cl?usp=sharing">
-
                 <figure class="blog-banner-box">
                   <img src="./assets/images/vds.jpeg" alt="UI interactions of the week" loading="lazy">
                 </figure>
-
                 <div class="blog-content">
-
                   <div class="blog-meta">
                     <p class="blog-category">Experiencias en Eventos</p>
-
                     <span class="dot"></span>
-
                     <time datetime="2024-07-24">Julio 24, 2024</time>
                   </div>
-
                   <h3 class="h3 blog-item-title">Experiencias en Eventos</h3>
-
                   <p class="blog-text">
                     En este apartado podrás verificar la asistencia a los eventos citados en el apartado Recorrido.
                   </p>
-
                 </div>
-
               </a>
             </li>
-
-          
 
           </ul>
 
@@ -888,20 +641,12 @@
 
       </article>
 
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-     
       <article class="contact" data-page="contacto">
 
         <header>
           <h2 class="h2 article-title">Contacto</h2>
         </header>
-      
+        
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
@@ -909,10 +654,10 @@
               width="400" height="300" loading="lazy"></iframe>
           </figure>
         </section>
-      
+        
         <section class="contact-form">
           <h3 class="h3 form-title">Formulario de Contacto</h3>
-      
+        
           <form action="https://formspree.io/f/xkgwoppo" method="POST" class="form">
             <div class="input-wrapper">
               <input type="text" name="name" class="form-input" placeholder="Nombre de la Empresa" required>
@@ -925,29 +670,13 @@
             </button>
           </form>
         </section>
-      
+        
       </article>
-      
-      
-      </script>
-      
-      
       
   </main>
 
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
 
-  <!--
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
