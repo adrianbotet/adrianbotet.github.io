@@ -97,6 +97,67 @@
       color: #003366 !important;
       background: transparent !important;
     }
+
+    /* --- ESTILOS PARA EL ACORDEÓN / DESPLEGABLE DE TAREAS --- */
+    .custom-details {
+      margin-top: 15px;
+      background: #F8F9FA;
+      border-radius: 8px;
+      padding: 12px 15px;
+      border: 1px solid #EAEAEA;
+    }
+    .custom-summary {
+      cursor: pointer;
+      color: #003366;
+      font-weight: 600;
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      list-style: none; /* Oculta la flecha por defecto en algunos navegadores */
+      transition: color 0.3s ease;
+    }
+    .custom-summary::-webkit-details-marker {
+      display: none; /* Oculta la flecha por defecto en WebKit */
+    }
+    .custom-summary:hover {
+      color: #004080;
+      text-decoration: underline;
+    }
+    .details-content {
+      margin-top: 15px;
+      color: #4A4A4A;
+      font-size: 14px;
+      line-height: 1.6;
+      border-top: 1px solid #EAEAEA;
+      padding-top: 15px;
+    }
+    .details-content h5 {
+      color: #003366;
+      margin-top: 15px;
+      margin-bottom: 8px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .details-content h5:first-child {
+      margin-top: 0;
+    }
+    .details-content ul {
+      margin-left: 20px;
+      list-style-type: disc;
+      margin-bottom: 12px;
+    }
+    .details-content ul ul {
+      list-style-type: circle;
+      margin-top: 5px;
+      margin-left: 20px;
+    }
+    .details-content li {
+      margin-bottom: 6px;
+    }
+    .details-content strong {
+      color: #333333;
+    }
   </style>
 </head>
 
@@ -295,32 +356,6 @@
 
         </section>
 
-        <div class="modal-container" data-modal-container>
-          <div class="overlay" data-overlay></div>
-          <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-5.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-            <div class="modal-content">
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-              <time datetime="2021-06-14">14 June, 2021</time>
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-            </div>
-          </section>
-        </div>
-
       </article>
 
       <article class="resume" data-page="recorrido">
@@ -391,6 +426,7 @@
           </div>
 
           <ol class="timeline-list">
+            
             <li class="timeline-item">
               <h4 class="h4 timeline-item-title">Ibercaja - Empleado Bancario</h4>
               <span>Febrero 2025 — Actualidad</span>
@@ -398,6 +434,76 @@
                 Desarrollo funciones dentro del ámbito bancario, participando en la atención al cliente, gestión de productos financieros y apoyo en la operativa diaria de la oficina, 
                 adquiriendo una visión práctica del sector financiero.
               </p>
+              
+              <details class="custom-details">
+                <summary class="custom-summary">
+                  <ion-icon name="add-circle-outline"></ion-icon> Ver descripción detallada de actividades
+                </summary>
+                <div class="details-content">
+                  
+                  <h5 class="h5">4.1 Atención en ventanilla y gestión de efectivo</h5>
+                  <p>He realizado operativas de caja como ingresos, reintegros, pago de tasas y transferencias. En este apartado, lo primero y más importante es asegurar que la caja esta cuadrada. Aunque al principio el pago de tasas me costaba un poco debido a la gran cantidad de modelos de impuestos que existen, después de las primeras semanas logré dominarlo. El hecho de manejar el dinero de clientes me ha permitido adquirir responsabilidad desde los primeros días.</p>
+
+                  <h5 class="h5">4.2 Gestión de incidencias y consultas</h5>
+                  <p>He gestionado problemas y dificultades de los clientes tanto de operativa de ventanilla como administrativas:</p>
+                  <ul>
+                    <li><strong>Incidencias de ventanilla:</strong>
+                      <ul>
+                        <li><strong>Devoluciones de recibos:</strong> Principalmente anulaciones de seguros de compañías externas, telefonía tras bajas del servicio u otros recibos rechazados por el cliente. Esto suele consistir también la anulación del mandato o domiciliación desvincular al cliente.</li>
+                        <li><strong>Anulación de transferencias:</strong> Corregir errores en el concepto o importe una vez finalizada la operación.</li>
+                        <li><strong>Banca electrónica:</strong> Solucionar problemas de acceso o dudas de los usuarios.</li>
+                      </ul>
+                    </li>
+                    <li><strong>Incidencias administrativas:</strong>
+                      <ul>
+                        <li><strong>Bajas de seguros:</strong> Escucha activa al cliente para entender su descontento y buscar soluciones, como la modificación de condiciones o mejora de precios. Si se procede a cancelar o modificar, contacto con el departamento correspondiente o la aseguradora colaboradora (como en este caso Caser) con brevedad.</li>
+                        <li><strong>Retención de billetes:</strong> Gestión de billetes sospechosos retenidos por el cajero, incluyendo la explicación al cliente, el envío del billete al departamento correspondiente y la cumplimentación del formulario para el Banco de España.</li>
+                        <li><strong>Operativa de cajero:</strong> Resolución de ingresos o reintegros no efectuados correctamente.</li>
+                        <li><strong>Estafas con tarjeta:</strong> Tramitación de la reclamación y preparación de la documentación necesaria para la denuncia policial.</li>
+                        <li><strong>Cuentas y comisiones:</strong> Reclamación de intereses en cuentas remuneradas (explicando incumplimientos de condiciones si procede) y gestión de devolución de comisiones buscando soluciones para evitar cargos futuros.</li>
+                      </ul>
+                    </li>
+                    <li><strong>Consultas específicas:</strong>
+                      <ul>
+                        <li><strong>Ahorro:</strong> Gestión de planes como PIAS, incluyendo rescates o modificaciones de aportaciones.</li>
+                        <li><strong>Préstamos vigentes:</strong> Pagos de cuotas y amortizaciones extraordinarias.</li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                  <h5 class="h5">4.3 Gestión de Empresas</h5>
+                  <ul>
+                    <li><strong>Anticipos y remesas:</strong> He gestionado tanto el abono como la cancelación o modificación de los mismos. He trabajado con anticipos a empresas nacionales y del extranjero, destacando el caso de un cliente con proveedor extranjero donde la operativa a realizar es distinta.</li>
+                    <li><strong>Documentación:</strong> Revisión y digitalización de bastanteos.</li>
+                    <li><strong>Otras operaciones:</strong> Pólizas de crédito, pago a proveedores y gestión de TPV.</li>
+                  </ul>
+
+                  <h5 class="h5">4.4 Comercialización</h5>
+                  <ul>
+                    <li><strong>Seguros:</strong> Apoyo en la venta de seguros "No Vida" (auto, hogar, salud), aprovechando el trato directo en ventanilla o vía telefónica.</li>
+                    <li><strong>Financiación inmobiliaria:</strong> Ayuda en la captación de necesidades de financiación de compradores en promociones financiadas por Ibercaja. Además de recabar datos para la posible hipoteca, se les exponen las ventajas de vincularse a la entidad y se les ofrece cita en la oficina para explicar nuestra metodología y cuentas de ahorro.</li>
+                  </ul>
+
+                  <h5 class="h5">4.5 Digitalización de expedientes y operativa administrativa</h5>
+                  <p>Una de mis misiones principales ha sido la recopilación y preparación de documentación para expedientes de riesgo, como la financiación hipotecaria, préstamos personales, de automóvil o pólizas de crédito para empresas. El proceso implica solicitar la documentación al cliente, verificarla, digitalizarla y enviarla. Dentro de este bloque destacan:</p>
+                  <ul>
+                    <li><strong>Delegación de expedientes:</strong> Procedimiento mediante el cual un departamento centralizado se encarga de formalizar el expediente con la documentación que hemos adjuntado.
+                      <ul>
+                        <li><strong>En hipotecas:</strong> Preparo la delegación introduciendo datos clave: valor de compra y financiación, tasadora, tipología de hipoteca, intervinientes, garantías (y su dirección), finalidad (vivienda habitual, inversión, etc.), estado de cargas y documentación (nota simple, tasación, contrato de compraventa).</li>
+                        <li><strong>Otras delegaciones:</strong> Renting, reclamaciones de tarjetas, certificados (ej. saldo 0), financiación, gestión con clientes (traslado de recibos/cuentas), servicios (retrocesión de transferencias/Bizum, alertas de fraude), seguros (siniestros) y varios.</li>
+                      </ul>
+                    </li>
+                    <li><strong>Solicitud de hipotecas:</strong> Ante la llegada de un cliente (o no cliente), recojo la información necesaria para el estudio de viabilidad: datos personales y de contacto, actividad laboral, ahorros aportados, importe de compra, financiación solicitada y finalidad.
+                      <ul>
+                        <li><strong>Cálculo del RAROC:</strong> Uso de esta calculadora para obtener la rentabilidad ajustada al riesgo de la operación, con el objetivo de simular escenarios o solicitar precios inferiores a la tarifa estándar.</li>
+                      </ul>
+                    </li>
+                    <li><strong>Firmas digitales y cumplimiento:</strong> Revisión de la normativa de datos (particulares y jurídicos), asegurando que operaciones y contratos estén firmados y la documentación legal (como la declaración de datos personales) escaneada y en orden.</li>
+                    <li><strong>Otras operaciones:</strong> Recepción de valija, carga/descarga del cajero, gestión del almacén.</li>
+                  </ul>
+
+                </div>
+              </details>
             </li>
 
             <li class="timeline-item">
