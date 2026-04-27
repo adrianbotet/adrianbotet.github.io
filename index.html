@@ -323,7 +323,7 @@
               <div class="service-content-box">
                 <h4 class="h4 service-item-title">Seguros</h4>
                 <p class="service-item-text">
-                  Conocimiento y experiencia en la venta de seguros de Vida y No Vida (Certificación IDD)
+                  He comercializado, cotizado y formalizado seguros de Vida y No Vida, logrando objetivos. Gestión de seguros asociados a financiación y no financiación (Certificación IDD).
                 </p>
               </div>
             </li>
@@ -333,9 +333,9 @@
                 <ion-icon name="home-outline"></ion-icon>
               </div>
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Financiación</h4>
+                <h4 class="h4 service-item-title">Financiación Hipotecaria</h4>
                 <p class="service-item-text">
-                  He tenido la oportunidad de trabajar en oficinas con actividad destacable en financiación hipotecaria así como promociones inmobiliarias, batiendo récords.
+                  A pesar de no tener la certificación LCCI (actualmente en estudio), he participado en numerosas citas de negociación y renegociación de condiciones con compradores y brókeres.
                 </p>
               </div>
             </li>
@@ -480,8 +480,8 @@
 
                   <h5 class="h5">4.4 Comercialización</h5>
                   <ul>
-                    <li><strong>Seguros:</strong> Apoyo en la venta de seguros "No Vida" (auto, hogar, salud), aprovechando el trato directo en ventanilla o vía telefónica.</li>
-                    <li><strong>Financiación inmobiliaria:</strong> Ayuda en la captación de necesidades de financiación de compradores en promociones financiadas por Ibercaja. Además de recabar datos para la posible hipoteca, se les exponen las ventajas de vincularse a la entidad y se les ofrece cita en la oficina para explicar nuestra metodología y cuentas de ahorro.</li>
+                    <li><strong>Seguros:</strong> He comercializado, cotizado y formalizado seguros de Vida y No Vida, logrando objetivos. He gestionado la venta tanto de seguros asociados a financiación como independientes, aprovechando el trato directo en ventanilla o vía telefónica.</li>
+                    <li><strong>Financiación inmobiliaria:</strong> A pesar de no tener LCCI (actualmente estudiando para ello), he participado en muchas citas de negociación y renegociación de condiciones, tanto con compradores como con brókeres. Además de recabar datos para la posible hipoteca, se les exponen las ventajas de vincularse a la entidad.</li>
                   </ul>
 
                   <h5 class="h5">4.5 Digitalización de expedientes y operativa administrativa</h5>
@@ -832,7 +832,9 @@
         
       </article>
       
-    </div> </main>
+    </div> 
+
+  </main>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -841,24 +843,19 @@
 
       navLinks.forEach(link => {
         link.addEventListener('click', function() {
-          // Obtenemos el nombre exacto de la pestaña clicada en minúscula
           const targetPage = this.textContent.trim().toLowerCase();
 
-          // 1. Quitar la clase 'active' de todas las pestañas y páginas
           navLinks.forEach(n => n.classList.remove('active'));
           pages.forEach(p => p.classList.remove('active'));
 
-          // 2. Añadir la clase 'active' a la pestaña actual
           this.classList.add('active');
 
-          // 3. Buscar la página que coincida y mostrarla
           pages.forEach(page => {
             if (page.dataset.page.toLowerCase() === targetPage) {
               page.classList.add('active');
             }
           });
           
-          // Opcional: Subir al principio de la página al cambiar de pestaña
           window.scrollTo(0, 0);
         });
       });
