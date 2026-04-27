@@ -34,6 +34,7 @@
       /* Cambiamos el amarillo original por un Azul Marino Corporativo (tipo banco) */
       --orange-yellow-crayola: #003366; 
       --vegas-gold: #004080;
+      --text-gradient-yellow: linear-gradient(to right, #003366, #004080);
       
       /* Bordes sutiles para el tema claro */
       --border-gradient-onyx: solid 1px #E4E6E9;
@@ -44,6 +45,33 @@
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
       border: 1px solid #EAEAEA;
     }
+
+    /* CORRECCIÓN: Fondo claro para la etiqueta de Empleado Bancario */
+    .info-content .title {
+      background-color: #E4E6E9 !important; /* Gris muy claro */
+      color: #003366 !important; /* Texto en azul marino */
+      font-weight: 500;
+    }
+
+    /* CORRECCIÓN: Puntos del recorrido, líneas debajo de los títulos y decoraciones forzadas a azul marino */
+    .article-title::after,
+    .timeline-item::before {
+      background: #003366 !important;
+    }
+
+    /* Sombra sutil para los puntos del recorrido para que destaquen sobre el blanco */
+    .timeline-item::before {
+      box-shadow: 0 0 0 4px #F0F2F5 !important;
+    }
+
+    /* Forzar iconos amarillos a azul */
+    .icon-box {
+      color: #003366 !important;
+    }
+    .icon-box ion-icon {
+      color: #003366 !important;
+    }
+
   </style>
 </head>
 
