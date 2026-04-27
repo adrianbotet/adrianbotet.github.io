@@ -46,14 +46,14 @@
       border: 1px solid #EAEAEA;
     }
 
-    /* CORRECCIÓN: Fondo claro para la etiqueta de Empleado Bancario */
+    /* Fondo claro para la etiqueta de Empleado Bancario */
     .info-content .title {
       background-color: #E4E6E9 !important; /* Gris muy claro */
       color: #003366 !important; /* Texto en azul marino */
       font-weight: 500;
     }
 
-    /* CORRECCIÓN: Puntos del recorrido, líneas debajo de los títulos y decoraciones forzadas a azul marino */
+    /* Puntos del recorrido, líneas debajo de los títulos y decoraciones forzadas a azul marino */
     .article-title::after,
     .timeline-item::before {
       background: #003366 !important;
@@ -65,31 +65,31 @@
     }
 
     /* Forzar iconos amarillos a azul */
-    .icon-box {
-      color: #003366 !important;
-    }
-    .icon-box ion-icon {
+    .icon-box, .icon-box ion-icon {
       color: #003366 !important;
     }
 
-    /* CORRECCIÓN NUEVA: Fondo claro para la barra de navegación (Navbar) */
-    .navbar {
-      background: #FFFFFF !important;
-      border: 1px solid #EAEAEA !important;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) !important;
+    /* --- SOLUCIÓN DE LA BARRA DE NAVEGACIÓN --- */
+    /* Eliminamos cualquier fondo oscuro semitransparente forzándolo a integrarse con el blanco de la tarjeta */
+    nav, .navbar, .navbar-list {
+      background: transparent !important;
+      background-color: transparent !important;
+      box-shadow: none !important;
+      border: none !important;
     }
 
-    /* Textos de la barra de navegación en gris oscuro para que se lean */
+    /* Damos un color gris medio a las pestañas inactivas para que se lean bien */
     .navbar-link {
-      color: #4A4A4A !important;
+      color: #666666 !important;
+      font-weight: 500 !important;
     }
 
-    /* Texto activo o al pasar el ratón en azul corporativo */
+    /* Pestaña activa y al hacer hover con azul corporativo */
     .navbar-link:hover,
     .navbar-link.active {
       color: #003366 !important;
+      background: transparent !important;
     }
-
   </style>
 </head>
 
