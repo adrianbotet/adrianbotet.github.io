@@ -832,7 +832,38 @@
         
       </article>
       
-  </main>
+    </div> </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const navLinks = document.querySelectorAll('.navbar-link[data-nav-link]');
+      const pages = document.querySelectorAll('article[data-page]');
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          // Obtenemos el nombre exacto de la pestaña clicada en minúscula
+          const targetPage = this.textContent.trim().toLowerCase();
+
+          // 1. Quitar la clase 'active' de todas las pestañas y páginas
+          navLinks.forEach(n => n.classList.remove('active'));
+          pages.forEach(p => p.classList.remove('active'));
+
+          // 2. Añadir la clase 'active' a la pestaña actual
+          this.classList.add('active');
+
+          // 3. Buscar la página que coincida y mostrarla
+          pages.forEach(page => {
+            if (page.dataset.page.toLowerCase() === targetPage) {
+              page.classList.add('active');
+            }
+          });
+          
+          // Opcional: Subir al principio de la página al cambiar de pestaña
+          window.scrollTo(0, 0);
+        });
+      });
+    });
+  </script>
 
   <script src="./assets/js/script.js"></script>
 
